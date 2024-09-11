@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p "Sisesta failinimi: " failn
+read -p "Sisesta sõnum: " tekst
+
+git add $failn
+git commit -m "$tekst"
+git push -uf skriptimine main
+
+echo "fail on edukalt githubi laetud"
